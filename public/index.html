@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Currículo de [Cauã Moreira]</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 <body>
-    
+
+    <header>
+        <h1>[Cauã Moreira]</h1>
+        <h1>[Matrícula: 00878733-]</h1>
+        <p><strong>Estudante da Universidade Puc Minas Betim</strong></p>
+
+        <img src="avatar.png" alt="avatar">
+
+        
+        <button class="menu-toggle" onclick="toggleMenu()">&#8230;</button>
+
+        
+        <div class="menu-container" id="menu">
+            <a href="#sobre" class="go-section">Sobre Mim</a>
+            <a href="#objetivo" class="go-section">Objetivo</a>
+            <a href="#educacao" class="go-section">Educação</a>
+            <a href="#habilidades" class="go-section">Habilidades</a>
+            <a href="#linguas" class="go-section">Línguas</a>
+            <a href="#contato" class="go-section">Contato</a>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim:</h2>
+        <p>Sou uma pessoa muito focada com os trabalhos e funções propostas a mim, prezo
+        sempre pela entrega do produto da melhor maneira possível.<br>Não gosto muito de 
+        trabalhar com o público porém sei lidar bem tranquilamente quando se necessário.Eu busco
+        sempre aprender cada vez mais<br> e melhorar como pessoa e para o mercado de trabalho.</p>
+    </section>
+
+    <section id="objetivo">
+        <h2>Objetivo:</h2>
+        <ul>
+            <li>Formar na faculdade</li>
+            <li>Me tornar um full-stack developer de respeito</li>
+        </ul>
+    </section>
+
+    <section id="educacao">
+        <h2>Educação:</h2>
+        <ul>
+            <li><strong>Ensino Médio</strong> - Formado na escola SESI Betim / Amélia Santana Barbosa</li>
+            <li><strong>Sistemas de Informação</strong> - Cursando na universidade Puc Minas Betim</li>
+        </ul>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades:</h2>
+        <ul>
+            <li>Trabalhar com público</li>
+            <li>Trabalhar em equipe</li>
+            <li>Produtividade</li>
+            <li>Administração do tempo</li>
+            <li>Comunicação</li>
+            <li>Manusear aparelhos tecnológicos</li>
+        </ul>
+    </section>
+
+    <section id="linguas">
+        <h2>Línguas:</h2>
+        <ul>
+            <li><strong>Inglês</strong> - Avançado</li>
+            <li><strong>Espanhol</strong> - Intermediário</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato:</h2>
+        <ul>
+            <li>Email: caua3595@gmail.com</li>
+            <li>Telefone: (31) 98789-1750</li>
+            <li>Instagram: <a href="https://www.instagram.com/caua.moreiraa/" target="_blank">https://www.instagram.com/caua.moreiraa/</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Cauã Moreira]. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none"; 
+            } else {
+                menu.style.display = "block"; 
+            }
+        }
+
+       
+        window.onclick = function(event) {
+            var menu = document.getElementById("menu");
+            if (!menu.contains(event.target) && !event.target.matches('.menu-toggle')) {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>
